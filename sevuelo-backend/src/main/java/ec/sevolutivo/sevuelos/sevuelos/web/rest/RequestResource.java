@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
@@ -36,6 +37,13 @@ public class RequestResource {
     public List<Request> getAllRequests() {
         log.debug("REST request to get all Requests");
         return requestRepository.findAll();
+    }
+
+    @GetMapping("/requests/{id}")
+    public Request getRequest(@PathVariable Long id) {
+        log.debug("REST request to get Request : {}", id);
+        Optional<Request> request = requestRepository.findById(id);
+        return request.get();
     }
 
     @PutMapping("/reserve")

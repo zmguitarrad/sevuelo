@@ -17,10 +17,6 @@ export class RequestsComponent implements OnInit {
   ngOnInit(): void {
     this.getRequests();
   }
-  
-  onSelect(request: Request): void {
-    this.selectedRequest = request;
-  }
 
   getRequests(): void {
     this.requestService.getRequests()

@@ -1,26 +1,35 @@
-<div *ngIf="request">
-    <h2>Details</h2>
-    <div><span>id: </span>{{request.id}}</div>
-    <div>
-        <label>Passenger:
-          <span>
-              {{request.passenger}}
-          </span>
-        </label>
-      </div>
-    <div>
-      <label>Destination:
-        <span>
-            {{request.destination}}
-        </span>
-      </label>
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="request">
+        <h2>Request Details</h2>
+        <div><span>id: </span>{{request.id}}</div>
+        <div>
+            <label>Passenger:
+              <span>
+                  {{request.passenger}}
+              </span>
+            </label>
+          </div>
+        <div>
+          <label>Destination:
+            <span>
+                {{request.destination}}
+            </span>
+          </label>
+        </div>
+        <div>
+            <label>Status:
+              <span>
+                  {{request.status}}
+              </span>
+            </label>
+        </div>
+        <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+        <button (click)="reserve()" class="btn btn-success">Reserve</button>
     </div>
-    <div>
-        <label>Status:
-          <span>
-              {{request.status}}
-          </span>
-        </label>
-    </div>
-    <button (click)="reserve()">Reserve</button>
+  </div>
 </div>

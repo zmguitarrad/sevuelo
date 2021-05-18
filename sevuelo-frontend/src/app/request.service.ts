@@ -23,7 +23,7 @@ export class RequestService {
     // return of(REQUESTS);
     return this.http.get<Request[]>(`${this.url}/requests`);
   }
-
+  
   getRequest(id: number): Observable<Request> {
     return this.http.get<Request>(`${this.url}/requests/${id}`);
   }

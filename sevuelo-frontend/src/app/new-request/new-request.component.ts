@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestService } from '../request.service';
 import { Request } from '../request.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-request',
@@ -12,7 +13,8 @@ export class NewRequestComponent implements OnInit {
   request: Request;
 
   constructor(
-    private requestService: RequestService
+    private requestService: RequestService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -29,7 +31,7 @@ export class NewRequestComponent implements OnInit {
     this.requestService.addRequest(this.request)
       .subscribe((newRequest) => {
         this.request = newRequest
-        this.previousState();
+        this.router.navigate(['/account']);
       }
     );
 
