@@ -5,7 +5,7 @@
 - Git
 - Java 11
 - node.js and npm
-- Angular CLI
+- Angular CLI version 10
 
 ## Execute
 
