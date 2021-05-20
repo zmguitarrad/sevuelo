@@ -31,7 +31,7 @@ export class NewRequestComponent implements OnInit {
     this.requestService.addRequest(this.request)
       .subscribe((newRequest) => {
         this.request = newRequest
-        this.router.navigate(['/account']);
+        this.router.navigate(['/requests']);
       }
     );
 

@@ -9,4 +9,8 @@ import org.springframework.stereotype.Repository;
  */
 @SuppressWarnings("unused")
 @Repository
-public interface RequestRepository extends JpaRepository<Request, Long> {}
+public interface RequestRepository extends JpaRepository<Request, Long> {
+
+    List<Request> findAllByName(String name);
+
+}
