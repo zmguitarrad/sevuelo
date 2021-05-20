@@ -19,5 +19,6 @@ cd sevuelo-backend
 ### Frontend
 ```
 cd sevuelo-frontend
-./ng server --open
+?
+ng server --open
 ```
