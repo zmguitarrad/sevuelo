@@ -44,18 +44,8 @@ public class Request implements Serializable {
         this.id = id;
     }
 
-    public Request id(Long id) {
-        this.id = id;
-        return this;
-    }
-
     public String getPassenger() {
         return this.passenger;
-    }
-
-    public Request passenger(String passenger) {
-        this.passenger = passenger;
-        return this;
     }
 
     public void setPassenger(String passenger) {
@@ -66,22 +56,12 @@ public class Request implements Serializable {
         return this.destination;
     }
 
-    public Request destination(String destination) {
-        this.destination = destination;
-        return this;
-    }
-
     public void setDestination(String destination) {
         this.destination = destination;
     }
 
     public RequestStatus getStatus() {
         return status;
-    }
-
-    public Request status(RequestStatus status) {
-        this.status = status;
-        return this;
     }
 
     public void setStatus(RequestStatus status) {
