@@ -29,7 +29,7 @@ public class RequestResource {
         if (request.getId() != null) {
             throw new RuntimeException("A new request cannot already have an ID");
         }
-        request.status(RequestStatus.NEW);
+        request.setStatus(RequestStatus.NEW);
         return requestRepository.save(request);
     }
 
