@@ -1,24 +1,24 @@
 # SE Vuelo
 
-## Requirements
+## Prerequisites
 
-- Git
-- Java 11
+- Install and configure Git
+- Install Java 11 and config JAVA_HOME environment variable
 - node.js and npm
-- Angular CLI version 10
+- Install globally Angular CLI version 10
 
-## Execute
+## Execute the dev environment
 
-### Backend
+### 1. Backend
 ```
 cd sevuelo-backend
 ./mvnw spring-boot:run
 ```
 
 
-### Frontend
+### 2. Frontend
 ```
 cd sevuelo-frontend
 ?
-ng server --open
+ng serve --open
 ```
