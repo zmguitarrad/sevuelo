@@ -7,7 +7,7 @@
 - node.js and npm
 - Install globally Angular CLI version 10
 
-## Execute the dev environment
+## Execute in DEV environment
 
 ### 1. Backend
 ```
