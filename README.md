@@ -19,6 +19,6 @@ cd sevuelo-backend
 ### 2. Frontend
 ```
 cd sevuelo-frontend
-?
+npm install
 ng serve --open
 ```
