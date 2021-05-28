@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Install and configure Git
-- Install Java 11 and config JAVA_HOME environment variable
+- Install Java 8 (or superior) and config JAVA_HOME environment variable
 - node.js and npm
 - Install globally Angular CLI version 10
 
@@ -19,6 +19,6 @@ cd sevuelo-backend
 ### 2. Frontend
 ```
 cd sevuelo-frontend
-npm install
+Download dependencies
 ng serve --open
 ```
