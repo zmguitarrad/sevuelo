@@ -4,8 +4,8 @@
 
 - Install and configure Git
 - Install Java 8 (or superior) and config JAVA_HOME environment variable
-- node.js and npm
-- Install globally Angular CLI version 10
+- node.js version 16 and npm version 8
+- Install globally Angular CLI version 13
 
 ## Execute in DEV environment
 
