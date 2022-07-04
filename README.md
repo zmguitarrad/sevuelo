@@ -5,7 +5,6 @@
 - Install and configure Git
 - Install Java 8 (or superior) and config JAVA_HOME environment variable
 - node.js version 16 and npm version 8
-- Install globally Angular CLI version 13
 
 ## Execute in DEV environment
 
@@ -17,8 +16,19 @@ cd sevuelo-backend
 
 
 ### 2. Frontend
+
+#### Angular frontend
+
 ```
-cd sevuelo-frontend
-Download dependencies
+cd sevuelo-frontend-angular
+Install dependencies
 ng serve --open
+```
+
+#### React frontend
+
+```
+cd sevuelo-frontend-react
+Install dependencies
+npm start
 ```
