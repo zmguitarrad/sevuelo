@@ -11,7 +11,7 @@ import { TabMenu } from 'primereact/tabmenu';
 
 export const App = () => {
   const [title] = useState("SE Vuelo");
-  const [activeIndex, setActiveIndex] = useState(window.location.pathname === '/requests' ? 1 : 0);
+  const [activeIndex, setActiveIndex] = useState((window.location.pathname === '/requests' || window.location.pathname === '/') ? 1 : 0);
   const navigate = useNavigate();
 
   const items = [

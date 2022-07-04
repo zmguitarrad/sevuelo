@@ -5,12 +5,9 @@ import { classNames } from 'primereact/utils';
 import { Button } from 'primereact/button';
 import { defaultValue } from '../../shared/request.model';
 import { createRequest } from '../../services/requests.service';
-import { useNavigate } from "react-router-dom";
 import '../../App.css';
 
 export const NewRequest = () => {
-
-  const navigate = useNavigate();
 
   const defaultValues = {
     passenger: '',
@@ -24,7 +21,7 @@ export const NewRequest = () => {
     newRequest.destination = data.destination;
     createRequest(newRequest);
     reset();
-    navigate('/requests');
+    window.location.href = "/requests"
   };
 
   return (
