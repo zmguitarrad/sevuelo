@@ -38,6 +38,10 @@ public class Request implements Serializable {
     @Column(name = "status", nullable = false)
     private RequestStatus status;
 
+    @Size(max = 100)
+    @Column(name = "comment", length = 100, nullable = true)
+    private String comment;
+
     public Long getId() {
         return id;
     }
@@ -68,6 +72,14 @@ public class Request implements Serializable {
 
     public void setStatus(RequestStatus status) {
         this.status = status;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getComment() {
+        return this.comment;
     }
 
     @Override
