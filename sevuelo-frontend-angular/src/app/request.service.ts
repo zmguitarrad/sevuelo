@@ -9,7 +9,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RequestService {
 
-  private url = 'http://localhost:8080/api';
+  private url = 'http://localhost:8085/api';
+  //private url = 'http://localhost:8080/api';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -23,7 +24,7 @@ export class RequestService {
     // return of(REQUESTS);
     return this.http.get<Request[]>(`${this.url}/requests`);
   }
-  
+
   getRequest(id: number): Observable<Request> {
     return this.http.get<Request>(`${this.url}/requests/${id}`);
   }

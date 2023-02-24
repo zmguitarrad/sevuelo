@@ -17,8 +17,10 @@ public class Request implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
-    @SequenceGenerator(name = "sequenceGenerator")
+    // @GeneratedValue(strategy = GenerationType.SEQUENCE, generator =
+    // "sequenceGenerator")
+    // @SequenceGenerator(name = "sequenceGenerator")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -67,7 +69,6 @@ public class Request implements Serializable {
     public void setStatus(RequestStatus status) {
         this.status = status;
     }
-
 
     @Override
     public boolean equals(Object o) {
